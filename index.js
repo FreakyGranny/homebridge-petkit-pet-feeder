@@ -648,8 +648,7 @@ class petkit_pet_feeder_plugin {
         const fast_response = petkitDevice.config.get('fast_response');
         if (fast_response) callback(null);
         if (value) {
-            if (petkitDevice.savedData.mealAmount &&
-                petkitDevice.services.meal_amount_service.getCharacteristic(Characteristic.On).value) {
+            if (petkitDevice.savedData.mealAmount) {
                 this.log.info(format('drop food:{} meal(s)', petkitDevice.savedData.mealAmount));
 
                 var result = false;
