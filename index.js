@@ -862,7 +862,7 @@ class petkit_pet_feeder_plugin {
         //         maxValue: defaults.config.max_amount,
         //         minStep: 1
         //     });
-        // petkitDevice.savedData.mealAmount = service_status;
+        petkitDevice.savedData.mealAmount = service_status;
 
         // petkitDevice.services.meal_amount_service = meal_amount_service;
 
