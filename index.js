@@ -434,7 +434,7 @@ class petkit_pet_feeder_plugin {
         // this.log.debug('device light status is: ' + (deviceDetailInfo.status.lightMode ? 'on' : 'off'));
 
         deviceDetailInfo.feedDailyList = {}
-        deviceDetailInfo.feedDailyList.meals = this.getFeedDailyList(deviceInfo, 'items');
+        // deviceDetailInfo.feedDailyList.meals = this.getFeedDailyList(deviceInfo, 'items');
 
         return deviceDetailInfo;
     };
@@ -1093,7 +1093,7 @@ class petkit_pet_feeder_plugin {
 
                     this.log.info(format('initialize Petkit Feeder device({}) success.', config.get('name')));
                     //feed DailyList
-                    this.hb_feedDailyList_set(petkitDevice, petkitDevice.config.get('enabled_daily_feeds'), () => { });
+                    // this.hb_feedDailyList_set(petkitDevice, petkitDevice.config.get('enabled_daily_feeds'), () => { });
                     //polling
                     this.setupPolling(petkitDevice);
                 } else {
